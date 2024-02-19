@@ -5,7 +5,7 @@ jQuery(document).ready(function($) {
         if (query.trim() !== '') {
             // Set query parameter based on user input
             var searchQuery = (query.toLowerCase() === 'people') ? 'people' : encodeURIComponent(query);
-            var url = 'https://api.unsplash.com/search/photos?query=' + searchQuery + '&per_page=10&client_id=WuS6MtESRDFMptTT4mLdSWuvuFe3D4JxqaLSVMh81yc';
+            var url = 'https://api.unsplash.com/search/photos?query=' + searchQuery + '&per_page=10&client_id=lFZx25l63KV_9SqRL1_5sO-785uqSjgtd7F_F7xxkX4';
             $.ajax({
                 url: url,
                 method: 'GET',

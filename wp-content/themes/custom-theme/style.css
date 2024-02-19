@@ -32,32 +32,35 @@ body {
 #footer > p {
     font-size: 18px;
 }
-/* responsive desing */
 #footer > h3 {
     font-weight: 600;
 }
 /* Navigation bar styles */
 .navbar {
-    background-color: #f8f9fa; /* Set background color */
-    padding: 15px 0; /* Add padding */
+    background-color: #333; 
+    color: #fff; 
+    padding: 10px 0;
+    height: 50px; 
 }
 
-.navbar .container {
+.container {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    height: 50px;
 }
 
 .navbar-brand {
-    font-size: 24px; 
+    color: #fff; 
+    font-weight: bold; 
     text-decoration: none; 
-    color: #333; 
+    font-size: 20px; 
 }
 
 .navbar-menu {
-    list-style-type: none; 
-    margin: 0;
-    padding: 0;
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
 }
 
 .navbar-menu li {
@@ -69,17 +72,49 @@ body {
     margin-right: 0; 
 }
 
-.navbar-menu li a {
+.navbar-menu a {
+    color: #fff; 
+    text-decoration: none;
+    font-size: 16px; 
+}
+
+/* Hamburger menu icon styles */
+.hamburger-menu {
+    display: none; 
+    cursor: pointer; 
+}
+
+.hamburger-icon {
+    width: 30px;
+    height: 3px;
+    background-color: #fff; 
+    margin: 6px 0;
+}
+
+/* Mobile dropdown menu styles */
+.navbar-menu-mobile {
+    display: none; 
+    list-style: none;
+    padding: 0; 
+}
+
+.navbar-menu-mobile.show {
+    display: block; 
+}
+
+.navbar-menu-mobile li {
+    margin-bottom: 10px; 
+}
+
+.navbar-menu-mobile a {
+    color: #fff; 
     text-decoration: none; 
-    color: #333; 
-    transition: color 0.3s; 
+    font-size: 16px; 
 }
-.navbar-menu li a:hover {
-    color: #007bff; 
-}
+
 @media screen and (min-width: 768px) {
     .header-background > h1 {
-        font-size: 18px;
+        font-size: 18px; 
     }
     .header-background {
         height: 40vh;
@@ -111,5 +146,57 @@ body {
     }
     #footer {
         text-align: center;
+    }
+}
+/* Mobile navigation styles */
+@media screen and (max-width: 768px) {
+    .navbar-menu {
+        display: none; 
+    }
+
+    .navbar-menu-mobile {
+        display: none; 
+        list-style: none; 
+        padding: 0; 
+        position: absolute;
+        top: 70px; 
+        right: 0;
+        width: 100%;
+        background-color: #333;
+        margin: 0px; 
+    }
+
+    .navbar-menu-mobile.show {
+        display: block;
+        width: 300px; 
+    }
+    .container {
+        justify-content: space-between;
+        padding: 0px 20px;
+        height: 50px;
+    }
+    .navbar-menu-mobile li {
+        margin-bottom: 10px; 
+    }
+
+    .navbar-menu-mobile a {
+        color: #fff; 
+        text-decoration: none; 
+        font-size: 16px; 
+        display: block;
+        padding: 10px 20px; 
+    }
+
+    /* Hamburger icon styles */
+    .hamburger-menu {
+        display: block; 
+        cursor: pointer; 
+    }
+
+    .hamburger-icon {
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        margin: 6px 0;
     }
 }
