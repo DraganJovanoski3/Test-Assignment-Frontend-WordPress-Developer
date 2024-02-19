@@ -34,7 +34,7 @@ function savePhotoURL($photo_url) {
 }
 
 if (!isRateLimitExceeded()) {
-    $url = 'https://api.unsplash.com/photos/random?client_id=lFZx25l63KV_9SqRL1_5sO-785uqSjgtd7F_F7xxkX4';
+    $url = 'https://api.unsplash.com/photos/random?client_id=PHv2be2mtI1vvhR4OgDJFGVAe5FaiBALyij2MgY5gdE';
     $response = file_get_contents($url);
 
     if ($response) {

@@ -1,4 +1,3 @@
-
 <?php
 /*
 Template Name: Scraped Data Template
@@ -62,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let page = 1; 
 
     const fetchPhotos = () => {
-        fetch(`https://api.unsplash.com/photos?page=${page}&per_page=7&client_id=lFZx25l63KV_9SqRL1_5sO-785uqSjgtd7F_F7xxkX4`)
+        fetch(`https://api.unsplash.com/photos?page=${page}&per_page=7&client_id=PHv2be2mtI1vvhR4OgDJFGVAe5FaiBALyij2MgY5gdE`)
             .then(response => response.json())
             .then(data => {
                 data.forEach(image => {
@@ -97,8 +96,7 @@ document.addEventListener('DOMContentLoaded', function() {
         fetchPhotos(); 
     });
 });
-
-
 </script>
+
 </body>
 </html>
