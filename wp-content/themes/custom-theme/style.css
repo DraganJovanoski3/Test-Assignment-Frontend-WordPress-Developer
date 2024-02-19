@@ -29,8 +29,13 @@ body {
     justify-content: center;
     text-align: center;
 }
+#footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
 #footer > p {
-    font-size: 18px;
+    font-size: 16px;
 }
 #footer > h3 {
     font-weight: 600;

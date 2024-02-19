@@ -34,7 +34,7 @@ function savePhotoURL($photo_url) {
 }
 
 if (!isRateLimitExceeded()) {
-    $url = 'https://api.unsplash.com/photos/random?client_id=PHv2be2mtI1vvhR4OgDJFGVAe5FaiBALyij2MgY5gdE';
+    $url = 'https://api.unsplash.com/photos/random?client_id=FuuNHg10kCM5SGba1Ne9Fg3nlH__2VH0LJlENe5-ts8';
     $response = file_get_contents($url);
 
     if ($response) {
@@ -94,7 +94,7 @@ if (file_exists($photo_file) && (time() - filemtime($photo_file) >= 3600)) {
 
         <ul class="navbar-menu">
             <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a></li>
-            <li><a href="<?php echo esc_url( home_url( '/scraped-data-page' ) ); ?>">Scraped Data Page</a></li>
+            <li><a href="<?php echo esc_url( home_url( '/scraped-data-template' ) ); ?>">Scraped Data Page</a></li>
         </ul>
     </div>
 </nav>

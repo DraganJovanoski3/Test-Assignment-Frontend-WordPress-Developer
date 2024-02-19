@@ -1,3 +1,4 @@
+
 <?php
 /*
 Template Name: Scraped Data Template
@@ -16,6 +17,7 @@ include 'header.php';
     gap: 20px;
     margin-top: 20px;
     height: 400px;
+    margin-bottom: 100px;
   }
 
   .image-item {
@@ -48,11 +50,18 @@ include 'header.php';
     border: 0px;
     border-radius: 5px;
   }
+  .container-loadmore {
+    height: 100%;
+    width: 100%;
+  }
 </style>
 </head>
 <body>
-<button id="load-more-btn" class="load-more-btn">Load More</button>
-<div class="image-container" id="image-container"></div>
+<div class="container-loadmore">
+  <button id="load-more-btn" class="load-more-btn">Load More</button>
+  <div class="image-container" id="image-container"></div>
+</div>
+
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     const imageContainer = document.getElementById('image-container');
@@ -61,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let page = 1; 
 
     const fetchPhotos = () => {
-        fetch(`https://api.unsplash.com/photos?page=${page}&per_page=7&client_id=PHv2be2mtI1vvhR4OgDJFGVAe5FaiBALyij2MgY5gdE`)
+        fetch(`https://api.unsplash.com/photos?page=${page}&per_page=7&client_id=FuuNHg10kCM5SGba1Ne9Fg3nlH__2VH0LJlENe5-ts8`)
             .then(response => response.json())
             .then(data => {
                 data.forEach(image => {
@@ -97,6 +106,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 </script>
-
+<?php
+get_footer();
+?>
 </body>
 </html>
