@@ -1,0 +1,115 @@
+body {
+    margin: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.header-background {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 35vh;
+}
+.header-background {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.header-background > h1 {
+    background-color: rgba(0, 0, 0, 0.536);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+#footer {
+    background-color: rgb(53, 53, 53);
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#footer > p {
+    font-size: 18px;
+}
+/* responsive desing */
+#footer > h3 {
+    font-weight: 600;
+}
+/* Navigation bar styles */
+.navbar {
+    background-color: #f8f9fa; /* Set background color */
+    padding: 15px 0; /* Add padding */
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-size: 24px; 
+    text-decoration: none; 
+    color: #333; 
+}
+
+.navbar-menu {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-menu li {
+    display: inline-block;
+    margin-right: 20px; 
+}
+
+.navbar-menu li:last-child {
+    margin-right: 0; 
+}
+
+.navbar-menu li a {
+    text-decoration: none; 
+    color: #333; 
+    transition: color 0.3s; 
+}
+.navbar-menu li a:hover {
+    color: #007bff; 
+}
+@media screen and (min-width: 768px) {
+    .header-background > h1 {
+        font-size: 18px;
+    }
+    .header-background {
+        height: 40vh;
+    }
+    #footer {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .header-background > h1 {
+        font-size: 22px; 
+    }
+    .header-background {
+        height: 50vh;
+    }
+    #footer {
+        text-align: center;
+    }
+    
+}
+
+@media screen and (min-width: 1200px) {
+    .header-background > h1 {
+        font-size: 24px; 
+    }
+    .header-background {
+        height: 65vh;
+    }
+    #footer {
+        text-align: center;
+    }
+}
