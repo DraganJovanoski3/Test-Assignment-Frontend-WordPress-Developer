@@ -89,7 +89,7 @@ if (file_exists($photo_file) && (time() - filemtime($photo_file) >= 3600)) {
 
         <ul class="navbar-menu-mobile">
             <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a></li>
-            <li><a href="<?php echo esc_url( home_url( '/scraped-data-page' ) ); ?>">Scraped Data Page</a></li>
+            <li><a href="<?php echo esc_url( home_url( '/scraped-data-template' ) ); ?>">Scraped Data Page</a></li>
         </ul>
 
         <ul class="navbar-menu">
